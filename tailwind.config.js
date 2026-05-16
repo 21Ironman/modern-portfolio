@@ -4,12 +4,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: '#0B0E14',
-        surface: '#121822',
-        surface2: '#1A2230',
-        primary: '#38bdf8', // Sky 400
-        secondary: '#818cf8', // Indigo 400
-        accent: '#c084fc', // Purple 400
+        background: '#0a0a0a', // Deep Apple Dark Mode
+        surface: '#171717',
+        surface2: '#262626',
+        primary: '#f4f4f5', // Titanium White
+        secondary: '#a1a1aa', // Titanium Gray
+        accent: '#ffffff', // Pure White
       },
       fontFamily: {
         sans: ['Plus Jakarta Sans', 'ui-sans-serif', 'system-ui', 'sans-serif'],

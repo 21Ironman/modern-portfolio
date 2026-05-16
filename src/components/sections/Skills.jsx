@@ -11,11 +11,11 @@ export function Skills() {
       
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {skills.map((skill, index) => (
-          <Card key={skill.name} index={index} className="p-6 flex flex-col items-center justify-center text-center border-transparent hover:border-emerald-500/30 transition-all hover:-translate-y-1">
-            <span className="mb-4 grid h-14 w-14 place-items-center rounded-xl bg-emerald-500/10 text-base font-bold text-emerald-400 shadow-[0_0_15px_rgba(16,185,129,0.15)]">
+          <Card key={skill.name} index={index} className="p-6 flex flex-col items-center justify-center text-center border border-white/5 hover:border-white/20 hover:bg-white/[0.02] transition-all hover:-translate-y-1">
+            <span className="mb-4 grid h-14 w-14 place-items-center rounded-xl bg-white/5 text-base font-bold text-slate-200 shadow-[0_0_15px_rgba(255,255,255,0.05)] border border-white/10">
               {skill.icon}
             </span>
-            <h3 className="font-bold text-slate-200 text-base">{skill.name}</h3>
+            <h3 className="font-semibold text-slate-200 text-base">{skill.name}</h3>
           </Card>
         ))}
       </div>

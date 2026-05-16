@@ -15,8 +15,9 @@ import { Projects } from './components/sections/Projects';
 import { Experience } from './components/sections/Experience';
 import { Contact } from './components/sections/Contact';
 
-// UI
+// UI & Layout
 import { MouseGlow } from './components/ui/MouseGlow';
+import { Scene3D } from './components/layout/Scene3D';
 
 export default function App() {
   const [active, setActive] = useState('home');
@@ -45,6 +46,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen overflow-hidden bg-background text-slate-200">
+      <Scene3D />
       <MouseGlow />
       <Background scaleX={scaleX} />
       <Navbar active={active} menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
