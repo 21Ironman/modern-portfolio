@@ -11,14 +11,18 @@ export const profile = {
 };
 
 export const skills = [
-  { name: 'Angular', value: 94, icon: 'NG' },
-  { name: 'Next.js', value: 88, icon: 'NX' },
-  { name: 'React.js', value: 86, icon: 'R' },
-  { name: 'TypeScript', value: 90, icon: 'TS' },
-  { name: 'RxJS / Redux', value: 88, icon: 'RX' },
-  { name: 'Tailwind / MUI', value: 84, icon: 'UI' },
-  { name: 'Jest Testing', value: 82, icon: 'JT' },
-  { name: 'Performance / SEO', value: 89, icon: 'CW' },
+  { name: 'Angular', icon: 'NG' },
+  { name: 'Next.js', icon: 'NX' },
+  { name: 'React.js', icon: 'R' },
+  { name: 'Node.js', icon: 'ND' },
+  { name: 'Express.js', icon: 'EX' },
+  { name: 'TypeScript', icon: 'TS' },
+  { name: 'MongoDB / SQL', icon: 'DB' },
+  { name: 'RxJS / Redux', icon: 'RX' },
+  { name: 'Tailwind / MUI', icon: 'UI' },
+  { name: 'Jest Testing', icon: 'JT' },
+  { name: 'Git / GitHub', icon: 'GIT' },
+  { name: 'Performance / SEO', icon: 'CW' },
 ];
 
 export const projects = [
