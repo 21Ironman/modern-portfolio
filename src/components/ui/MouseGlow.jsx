@@ -5,8 +5,8 @@ export function MouseGlow() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isHovering, setIsHovering] = useState(false);
 
-  // Ultra-smooth, heavy spring physics for the high-class feel
-  const springConfig = { damping: 40, stiffness: 80, mass: 0.8 };
+  // Fast spring physics for the glowing cursor
+  const springConfig = { damping: 25, stiffness: 400, mass: 0.1 };
   const cursorX = useSpring(0, springConfig);
   const cursorY = useSpring(0, springConfig);
 
@@ -54,7 +54,7 @@ export function MouseGlow() {
           y: cursorY,
           translateX: '-50%',
           translateY: '-50%',
-          background: 'radial-gradient(circle, rgba(255,255,255,0.05) 0%, rgba(161,161,170,0.02) 40%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.05) 40%, transparent 70%)',
         }}
         animate={{
           scale: isHovering ? 1.5 : 1,
