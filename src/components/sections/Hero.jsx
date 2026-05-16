@@ -14,12 +14,12 @@ export function Hero() {
     <section id="home" className="relative flex min-h-screen items-center px-6 pt-24">
       <div className="mx-auto grid max-w-7xl items-center gap-12 py-20 lg:grid-cols-[1.08fr_0.92fr]">
         <motion.div initial="hidden" animate="visible" variants={fadeUp}>
-          <motion.div 
+          <motion.div
             whileHover={{ scale: 1.05 }}
             className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-300 shadow-glow"
           >
             <Sparkles size={16} className="text-primary" />
-            4 years building healthcare web apps
+            4+ years building healthcare web apps
           </motion.div>
           <h1 className="font-display max-w-4xl text-5xl font-black leading-tight text-white sm:text-6xl lg:text-7xl">
             {profile.name}
@@ -39,12 +39,12 @@ export function Hero() {
             </Button>
           </div>
           <div className="mt-8 flex gap-4">
-             <a href={profile.github} target="_blank" rel="noreferrer" className="text-slate-400 hover:text-white transition-colors" aria-label="GitHub">
-                <Github size={24} />
-             </a>
-             <a href={profile.linkedin} target="_blank" rel="noreferrer" className="text-slate-400 hover:text-primary transition-colors" aria-label="LinkedIn">
-                <Linkedin size={24} />
-             </a>
+            <a href={profile.github} target="_blank" rel="noreferrer" className="text-slate-400 hover:text-white transition-colors" aria-label="GitHub">
+              <Github size={24} />
+            </a>
+            <a href={profile.linkedin} target="_blank" rel="noreferrer" className="text-slate-400 hover:text-primary transition-colors" aria-label="LinkedIn">
+              <Linkedin size={24} />
+            </a>
           </div>
         </motion.div>
         <motion.div
@@ -61,17 +61,17 @@ export function Hero() {
               <span />
             </div>
             <div className="mt-12 grid gap-6 h-full">
-              <motion.div 
+              <motion.div
                 animate={{ y: [0, -10, 0] }}
                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-                className="h-32 rounded-xl bg-gradient-to-br from-primary/80 via-sky-400/50 to-accent/80 backdrop-blur shadow-glow" 
+                className="h-32 rounded-xl bg-gradient-to-br from-primary/80 via-sky-400/50 to-accent/80 backdrop-blur shadow-glow"
               />
               <div className="grid grid-cols-3 gap-4">
                 {[1, 2, 3].map((i) => (
-                  <motion.div 
+                  <motion.div
                     key={i}
                     whileHover={{ scale: 1.05 }}
-                    className="h-24 rounded-xl bg-white/10 glass border border-white/5" 
+                    className="h-24 rounded-xl bg-white/10 glass border border-white/5"
                   />
                 ))}
               </div>
