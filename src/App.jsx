@@ -34,10 +34,13 @@ export default function App() {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) setActive(entry.target.id);
+          if (entry.isIntersecting) {
+            setActive(entry.target.id);
+          }
         });
       },
-      { rootMargin: '-20% 0px -20% 0px', threshold: 0.1 },
+      // Detect when a section crosses the exact center of the screen
+      { rootMargin: '-50% 0px -49% 0px', threshold: 0 },
     );
 
     sections.forEach((section) => observer.observe(section));
