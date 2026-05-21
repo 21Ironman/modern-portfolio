@@ -37,7 +37,7 @@ export default function App() {
           if (entry.isIntersecting) setActive(entry.target.id);
         });
       },
-      { rootMargin: '-35% 0px -55% 0px', threshold: 0.1 },
+      { rootMargin: '-20% 0px -20% 0px', threshold: 0.1 },
     );
 
     sections.forEach((section) => observer.observe(section));
