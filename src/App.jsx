@@ -45,7 +45,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen overflow-hidden bg-background text-slate-200">
+    <div className="min-h-screen overflow-x-hidden bg-background text-slate-200">
       <Scene3D />
       <MouseGlow />
       <Background scaleX={scaleX} />
